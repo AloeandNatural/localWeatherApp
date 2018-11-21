@@ -128,11 +128,11 @@ body .blurBackground {
   background-position: inherit;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -9px;
   position: fixed;
 }
 
-body .blurBackground:before {
+.blurBackground:before {
   background-image: inherit;
   background-position: inherit;
   -webkit-filter: blur(6px);
@@ -148,7 +148,7 @@ body .blurBackground:before {
   top: 0;
 }
 
-body .blurBackground .content {
+.blurBackground .content {
   -webkit-filter: blur(0);
   -moz-filter: blur(0);
   -o-filter: blur(0);
