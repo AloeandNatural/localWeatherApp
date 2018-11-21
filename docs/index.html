@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Local Weather App</title>
+</head>
+
+<body>
+
+    <main class="container-fluid">
+        <header>
+            <h1 id="location"></h1>
+            <button class="big-btn toggleFC">Celcius</button>
+        </header>
+
+        <div class="circle">
+            <div class="circle__inner">
+                <div class="circle__wrapper">
+                    <div class="circle__content"><canvas id="icon" width="128" height="128"></canvas>
+                        <br>
+                        <span id="temp"></span>
+                        <span class="symbol">&deg;</span>
+                        <br>
+                        <span id="conditions"></span>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p><span><a href="https://darksky.net/poweredby/" target="_blank">Powered by DarkSky</a></span></p>
+    </main>
+
+    <footer class="blurBackground">
+        <p class="content">&copy 2017 Nicolas Leduc. All Rights Reserved</p>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
